@@ -26,6 +26,9 @@
 // Only one valid answer exists.
 
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+package main
+
+import "fmt"
 
 func twoSum(nums []int, target int) []int {
 	for p1 := 0; p1 < len(nums); p1++ {
@@ -37,4 +40,10 @@ func twoSum(nums []int, target int) []int {
 		}
 	}
 	return nil
+}
+func main() {
+	nums := []int{2, 7, 11, 15}
+	target := 9
+	fmt.Println(twoSum(nums, target))
+
 }
